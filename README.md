@@ -5,7 +5,7 @@ Overview
 ========
  
 This module implements the Center for Internet Security (CIS) Security Configuration Benchmark for:
-- Amazon Linux 2014.09
+- Amazon Linux 2014.09 ( we are not using Amazon, at Edge we are only using Vmware cloud)
 - Red Hat Enterprise Linux 6 v.1.4.0 
 - Red Hat Enterprise Linux 7 v.1.1.0
 
@@ -17,7 +17,7 @@ Installation
 
 Please either:
 
-- Clone git repo from https://github.com/arildjensen/cis-puppet
+- Clone git repo from https://github.com/mkhafeez/cis-puppet
 - Run "puppet module install arildjensen/cis" and install from PuppetForge (http://forge.puppetlabs.com/arildjensen/cis)
 
 Use
@@ -29,7 +29,7 @@ Also note that there are three subclasses in the cis module:
 - cis::linuxcontrols (implements the specific controls with a general name, e.g. cis::linuxcontrols::c0001, allowing for future re-use)
 - cis::el6 (maps directly to a specific CIS control for RHEL6, e.g. cis::el6::1_1_17 for control 1.1.17 in the benchmark)
 - cis::el7 (maps directly to a specific CIS control for RHEL7, e.g. cis::el6::4_7 for control 4.7 in the benchmark)
-- cis::awslinux (maps directly to a specific CIS control for AWS Linux)
+#- cis::awslinux (maps directly to a specific CIS control for AWS Linux)
 
 User-Controlled Settings
 ========================
@@ -52,7 +52,7 @@ Author
 ====
 
 Written by Arild Jensen <ajensen@counter-attack.com> with source code repository at https://github.com/arildjensen/cis-puppet.
-
+Reconfigered by Muhamamd Hafeez, to use for our Environment at Edge.
 
 Release History
 ==========
