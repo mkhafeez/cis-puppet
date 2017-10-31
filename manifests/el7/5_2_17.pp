@@ -3,6 +3,6 @@
 # CIS Security Benchmark for RHEL7
 #
 
-class cis::el7::5_2_17  {
+class cis::el7::a3  {
   include cis::linuxcontrols::c0053
 }
