@@ -4,7 +4,7 @@
 # base if any deviations are necessary.
 #
 
-class cis::el7all {
+class cis-puppet::el7all {
   include cis::el7::1_1_10
   include cis::el7::1_1_14
   include cis::el7::1_1_15
